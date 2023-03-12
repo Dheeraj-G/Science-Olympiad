@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* pallets - 
+- #E5ad4d
+- #1E205B
+*/
+
+body {
+    font-family: sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: lightgray solid;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    color: white;
+}
+
+.navbar a:hover {
+    border-bottom: 2px white solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Heading */
+.heading {
+    height: 350px;
+    text-align: center;
+    padding: 120px;
+    background-color: #01224d;
+    color: white;
+}
+
+.heading .container {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+/* Coach Heading */
+.coach-heading {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.coach-heading h1 {
+    font-size: 50px;
+}
+
+/* Coach Info */
+.wrapper {
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 0 50px;
+    justify-items: center;
+    font-weight: 100;
+}
+
+.section1, 
+.section2,
+.section3,
+.section4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.section1 h1{
+    font-size: 30px;
+}
+
+.section2 h1{
+    font-size: 30px;
+}
+
+/* Captains Heading */
+.captain-heading {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.captain-heading h1 {
+    font-size: 50px;
+}
+
+/* Captains Pictures */
+
+.captain-pic .container {
+    max-width: 1300px;
+    border-bottom: lightgray solid;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c d d d d"
+      "c c c c d d d d";
+    align-items: center;
+}
+
+.wrapper1 .section1 {
+    grid-area: a;
+}
+
+.wrapper1 .section2 {
+    grid-area: b;
+}
+
+.wrapper1 .section3 {
+    grid-area: c;
+}
+
+.wrapper1 .section4 {
+    grid-area: d;
+}
+
+/* Junior Captains Heading */
+.junior-captain-heading {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.junior-captain-heading h1 {
+    font-size: 50px;
+}
+
+/* Junior Captain Pics */
+.junior-captain-pic .container {
+    max-width: 1300px;
+    border-bottom: lightgray solid;
+}
+
+/* Team Heading */
+.team-heading {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.team-heading h1 {
+    font-size: 50px;
+}
+
+/* Socials */
+.socials {
+    padding-top: 20px;
+    height: 300px;
+    text-align: center;
+}
+
+.socials .container {
+    max-width: 400px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.socials .grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.socials p {
+    padding: 30px;
+    border-left: lightgray solid;
+}
+
+.socials h1{
+    border-top: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    font-size: 30px;
+}
+
+/* Footer */
+.footer {
+    height: 70px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Utilities */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom: lightgray solid;
+}

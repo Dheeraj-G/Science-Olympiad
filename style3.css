@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* pallets - 
+- #E5ad4d
+- #1E205B
+*/
+
+body {
+    font-family: sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: lightgray solid;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    color: white;
+}
+
+.navbar a:hover {
+    border-bottom: 2px white solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Heading */
+.heading {
+    height: 350px;
+    text-align: center;
+    padding: 120px;
+    background-color: #01224d;
+    color: white;
+}
+
+.heading .container {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+/* Calender */
+.calender {
+    margin: 0 70px;
+}
+
+/* Footer */
+.footer {
+    height: 70px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Utilities */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom: lightgray solid;
+}

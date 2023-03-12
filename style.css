@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* pallets - 
+- #E5ad4d
+- #1E205B
+*/
+
+body {
+    font-family: sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: rgb(1 34 77) solid;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    color: white;
+}
+
+.navbar a:hover {
+    border-bottom: 2px white solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Image grid */
+.wrapper {
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 0 40px;
+    color: white;
+}
+
+.wrapper a:hover{
+    border-bottom: 5px lightgrey solid;
+}
+
+.space {
+    color: black;
+}
+
+/* Footer */
+.footer {
+    height: 70px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* logobar */
+.logobar {
+    background-color: rgb(1 34 77);
+    align-items: center;
+    height: 440px;
+}
+
+.logobar img{
+    height: 70%;
+    width: auto;
+}
+
+/* Space */
+.space {
+    height: 150px;
+}
+
+.space .container{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 100px;
+    border-top: lightgray solid;
+}
+
+/* Utilities */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
